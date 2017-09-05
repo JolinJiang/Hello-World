@@ -1,0 +1,23 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+package LianXi;
+
+public class XianCheng extends Thread {
+	public void run(){
+		for(int i=0; i<5;i++){
+//			System.out.print(i);
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	public static void main(String args[]){
+		XianCheng x1 =  new XianCheng();
+		x1.start();
+	}
+
+}
